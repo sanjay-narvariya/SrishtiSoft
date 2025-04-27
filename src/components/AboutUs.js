@@ -6,7 +6,20 @@ import sanjayPhoto from '../assets/sanjay-narvariya.jpeg'; // Apna sahi path lag
 function About() {
   return (
     <Container id="about" data-aos="fade-right" style={{ marginTop: 40, color: '#fff' }}>
-      <Typography variant="h4" align="center" gutterBottom>About Us</Typography>
+        <Typography 
+          variant="h4" 
+          align="center" 
+               gutterBottom 
+                 sx={{
+                 color: 'white',
+                  textDecoration: 'underline',
+                  textDecorationColor: 'red',
+            textUnderlineOffset: '4px', // optional: thoda niche underline
+               }}
+                >
+               About Us
+           </Typography>
+
       <Grid container spacing={4} alignItems="center">
         <Grid item xs={12} md={6}>
           <Avatar
