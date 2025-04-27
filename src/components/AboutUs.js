@@ -14,7 +14,7 @@ function About() {
           color: 'white',
           textDecoration: 'underline',
           textDecorationColor: 'red',
-          textUnderlineOffset: '4px',
+          textUnderlineOffset: '4px', // Underline thoda neeche dikhane ke liye
         }}
       >
         About Us
