@@ -21,13 +21,13 @@ function App() {
   }, []);
 
   useEffect(() => {
-    AOS.init({ duration: 1200 });
+    AOS.init({ duration: 1200, once: true });
   }, []);
 
   if (loading) return <Loader />;
 
   return (
-    <>
+    <div style={{ position: 'relative', overflowX: 'hidden' }}>
       {/* Background Video */}
       <video
         autoPlay
@@ -41,7 +41,10 @@ function App() {
           width: '100%',
           height: '100%',
           objectFit: 'cover',
+          objectPosition: 'center',
           zIndex: -1,
+          pointerEvents: 'none',
+          backgroundColor: '#000', // fallback background
         }}
       >
         <source src="/videos/video-1.mp4" type="video/mp4" />
@@ -49,7 +52,7 @@ function App() {
       </video>
 
       {/* Main Website Content */}
-      <Header className="header" />
+      <Header />
       <HeroSection />
       <About />
       <Services />
@@ -57,8 +60,8 @@ function App() {
       <WhyChooseUs />
       <StatsCounter />
       <Testimonials />
-      <Footer className="footer" />
-    </>
+      <Footer />
+    </div>
   );
 }
 
