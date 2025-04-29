@@ -14,8 +14,8 @@ function Partners() {
         width: '100%',
         padding: '80px 0',
         textAlign: "center",
-        borderRadius: '40px',
-        margin: '0 auto',
+         borderRadius: '70px',
+        margin: '30px auto',
       }}
     >
       <Container maxWidth="lg">
