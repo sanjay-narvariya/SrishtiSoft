@@ -20,7 +20,7 @@ function Partners() {
       data-aos="zoom-in"
     >
       <Container>
-      <Typography variant="h4" gutterBottom style={{ color: 'violet', fontWeight: 800 }}>
+      <Typography variant="h4" gutterBottom style={{ color: '#f7d794', fontWeight: 800 }}>
       Powered by Numeric Infosystem Pvt. Ltd.
         </Typography>
         <Box mt={4} display="flex" justifyContent="center">
