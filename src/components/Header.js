@@ -31,19 +31,6 @@ function Header() {
           </Typography>
         </Box>
 
-        {/* Menu Icon for Mobile (optional) */}
-        <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ ml: 1 }}
-          >
-            <MenuIcon />
-          </IconButton>
-        </Box>
-
         {/* Add buttons here for laptop view if you want */}
         {/* Example: Home | About | Contact */}
         {/* <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
