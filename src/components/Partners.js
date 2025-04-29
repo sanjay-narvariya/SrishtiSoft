@@ -8,7 +8,7 @@ function Partners() {
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
-      width: '50%',
+      width: '70%',
       height: 'auto',
       textAlign: "center",
       display: 'flex',
@@ -21,23 +21,23 @@ function Partners() {
     >
       <Container>
       <Typography variant="h4" gutterBottom style={{ color: 'violet', fontWeight: 800 }}>
-          Our Partners
+      Powered by Numeric Infosystem Pvt. Ltd.
         </Typography>
         <Box mt={4} display="flex" justifyContent="center">
           <Card
             sx={{
-              width: 250,
-              padding: 2,
+              width: '77%',
+              padding: 0,
               borderRadius: 4,
               backgroundColor: "#ffffffcc", // white with little transparency
-              boxShadow: "0px 4px 20px rgba(0,0,0,0.2)",
+              boxShadow: "0px 2px 2px rgba(0,0,0,0.2)",
               transition: "transform 0.3s",
               "&:hover": {
                 transform: "scale(1.05)",
               },
             }}
           >
-            <CardContent>
+            <CardContent style={{}}>
               <img
                 src="/partner-logo.jpg" // <-- Apna partner logo image
                 alt="Partner"
