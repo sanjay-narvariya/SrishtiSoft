@@ -14,7 +14,9 @@ function Partners() {
         width: '100%',
         padding: '80px 0',
         textAlign: "center",
-         borderRadius: '70px',
+          borderRadius: '70px',
+        borderRadius: '70px',
+
         margin: '30px auto',
       }}
     >

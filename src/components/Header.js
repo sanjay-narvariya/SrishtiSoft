@@ -31,13 +31,6 @@ function Header() {
           </Typography>
         </Box>
 
-        {/* Add buttons here for laptop view if you want */}
-        {/* Example: Home | About | Contact */}
-        {/* <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-          <Button color="inherit">Home</Button>
-          <Button color="inherit">About</Button>
-          <Button color="inherit">Contact</Button>
-        </Box> */}
       </Toolbar>
     </AppBar>
   );
