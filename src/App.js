@@ -55,8 +55,8 @@ function App() {
       <Header />
       <HeroSection />
       <About />
-      <Services />
       <Partners />
+      <Services />
       <WhyChooseUs />
       <StatsCounter />
       <Testimonials />
