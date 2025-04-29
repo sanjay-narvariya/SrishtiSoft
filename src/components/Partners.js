@@ -18,7 +18,7 @@ function Partners() {
         margin: '0 auto',
       }}
     >
-      <Container maxWidth={'80%'}>
+      <Container maxWidth="lg">
         <Typography
           variant="h4"
           gutterBottom
@@ -26,7 +26,7 @@ function Partners() {
             color: '#f7d794',
             fontWeight: 800,
             mb: 4,
-            marginTop:'-50px'
+            mt: { xs: 0, md: '-50px' }, // Responsive negative margin
           }}
         >
           Powered by Numeric Infosystem Pvt. Ltd.
@@ -36,7 +36,7 @@ function Partners() {
           <Card
             sx={{
               width: { xs: '100%', sm: '95%', md: '85%', lg: '80%' },
-              aspectRatio: '24 / 9',
+              height: { xs: 'auto', md: '52vh' }, // 👈 Responsive height instead of aspectRatio
               padding: 0,
               borderRadius: 4,
               overflow: "hidden",
@@ -51,9 +51,9 @@ function Partners() {
             <CardContent sx={{ padding: 0 }}>
               <Box
                 sx={{
-                  width: '95%', // 👈 Reduce image width
-                  height: '90%',
-                  margin: '0 auto', // 👈 Center the image
+                  width: '95%',
+                  height: '100%',
+                  margin: '0 auto',
                 }}
               >
                 <img
