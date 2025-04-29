@@ -56,8 +56,8 @@ function Partners() {
                   width: '100%',
                   height: 'auto',
                   display: 'block',
-                  onError: (e) => e.target.src = '/fallback-image.jpg', // fallback image
                 }}
+                onError={(e) => e.target.src = '/fallback-image.jpg'} // Correct place for onError handler
               />
             </CardContent>
           </Card>
