@@ -14,9 +14,7 @@ function Partners() {
         width: '100%',
         padding: '80px 0',
         textAlign: "center",
-          borderRadius: '70px',
         borderRadius: '70px',
-
         margin: '30px auto',
       }}
     >
@@ -56,8 +54,9 @@ function Partners() {
                 alt="Partner"
                 sx={{
                   width: '100%',
-                  height: 'auto',           // ✅ image ka height automatic hoga
+                  height: 'auto',
                   display: 'block',
+                  onError: (e) => e.target.src = '/fallback-image.jpg', // fallback image
                 }}
               />
             </CardContent>
