@@ -26,7 +26,7 @@ function Partners() {
             color: '#f7d794',
             fontWeight: 800,
             mb: 4,
-            mt: { xs: 0, md: '-50px' }, // Responsive negative margin
+            mt: { xs: 0, md: '-50px' },
           }}
         >
           Powered by Numeric Infosystem Pvt. Ltd.
@@ -36,11 +36,14 @@ function Partners() {
           <Card
             sx={{
               width: { xs: '100%', sm: '95%', md: '85%', lg: '80%' },
-              height: { xs: 'auto', md: '52vh' }, // 👈 Responsive height instead of aspectRatio
+              height: { xs: 'auto', md: '45vh' },
               padding: 0,
               borderRadius: 4,
               overflow: "hidden",
-              backgroundColor: "#ffffffcc",
+              backgroundColor: {
+                xs: "rgba(255, 255, 255, 0.8)", // less white on mobile
+                md: "rgba(255, 255, 255, 0.9)", // more white on desktop
+              },
               transition: "transform 0.3s",
               boxShadow: 2,
               "&:hover": {
@@ -52,7 +55,7 @@ function Partners() {
               <Box
                 sx={{
                   width: '95%',
-                  height: '100%',
+                  height: { xs: '200px', md: '100%' }, // 👈 mobile: fixed height, desktop: fill
                   margin: '0 auto',
                 }}
               >
