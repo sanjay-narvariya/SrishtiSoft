@@ -36,14 +36,10 @@ function Partners() {
           <Card
             sx={{
               width: { xs: '100%', sm: '95%', md: '85%', lg: '80%' },
-              height: { xs: 'auto', md: '45vh' },
               padding: 0,
               borderRadius: 4,
               overflow: "hidden",
-              backgroundColor: {
-                xs: "rgba(255, 255, 255, 0.8)", // less white on mobile
-                md: "rgba(255, 255, 255, 0.9)", // more white on desktop
-              },
+              backgroundColor: "rgba(255, 255, 255, 0.85)",
               transition: "transform 0.3s",
               boxShadow: 2,
               "&:hover": {
@@ -53,23 +49,15 @@ function Partners() {
           >
             <CardContent sx={{ padding: 0 }}>
               <Box
+                component="img"
+                src="/partner-logo.jpg"
+                alt="Partner"
                 sx={{
-                  width: '95%',
-                  height: { xs: '200px', md: '100%' }, // 👈 mobile: fixed height, desktop: fill
-                  margin: '0 auto',
+                  width: '100%',
+                  height: 'auto',           // ✅ image ka height automatic hoga
+                  display: 'block',
                 }}
-              >
-                <img
-                  src="/partner-logo.jpg"
-                  alt="Partner"
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                    display: "block",
-                  }}
-                />
-              </Box>
+              />
             </CardContent>
           </Card>
         </Box>
