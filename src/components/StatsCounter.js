@@ -7,8 +7,8 @@ function StatsCounter() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.5 });
 
   const stats = [
-    { label: "Clients Served", value: 100 },
-    { label: "Projects Completed", value: 100 },
+    { label: "Clients Served", value: 10 },
+    { label: "Projects Completed", value: 50 },
     { label: "Years of Experience", value: 4 },
     { label: "Team Members", value: 5 },
   ];
