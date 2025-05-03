@@ -41,27 +41,27 @@ function App() {
       position: 'fixed',
       top: '50%',
       left: '50%',
-      transform: 'translate(-50%, -50%)', // Centers the message
+      transform: 'translate(-50%, -50%)',
       backgroundColor: '#F6F0F0',
       color: '#2980b9',
       textAlign: 'center',
-      fontSize: '3rem', // Increased font size for a bigger message
+      fontSize: window.innerWidth < 600 ? '2rem' : '3rem', // responsive font size
       fontWeight: 'bold',
-      padding: '90px 100px', // Increased padding for more height
-      borderRadius: '12px', // Optional: increased border radius for styling
+      padding: window.innerWidth < 600 ? '50px 30px' : '90px 100px', // responsive padding
+      borderRadius: '12px',
       zIndex: 1000,
       cursor: 'pointer',
-      minHeight: '150px', // Ensures the div has a minimum height
+      minHeight: window.innerWidth < 600 ? '100px' : '150px',
+      width: window.innerWidth < 600 ? '80%' : 'auto', // responsive width
       display: 'flex',
       justifyContent: 'center',
-      alignItems: 'center', // Centers the text vertically
+      alignItems: 'center',
     }}
-    onClick={hideMessage} // Hide message on click
+    onClick={hideMessage}
   >
     Welcome to SrishtiSoft Innovations
   </div>
 )}
-
 
       {/* Background Video */}
       <video
