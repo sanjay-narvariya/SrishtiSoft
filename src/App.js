@@ -42,8 +42,8 @@ function App() {
       top: '50%',
       left: '50%',
       transform: 'translate(-50%, -50%)',
-      backgroundColor: '#F6F0F0',
-      color: '#2980b9',
+      backgroundColor: '#1e3799',
+      color: '#fff',
       textAlign: 'center',
       fontSize: window.innerWidth < 600 ? '1.4rem' : '3rem', // Much smaller font on mobile
       fontWeight: 'bold',
